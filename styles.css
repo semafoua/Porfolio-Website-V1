@@ -4,11 +4,41 @@
   --white: #f8f8ff;
   --blue: #46b1c9;
   background-color: var(--white);
-
   --main-font: "Poppins";
   --second-font: "DM Sans";
+  --block: 0.1rem solid red;
 }
 
+* {
+  margin: 0;
+}
 
+nav {
+  height: 4rem;
+  border: var(--block);
+}
 
+.intro {
+  height: 50rem;
+  border: var(--block);
+}
 
+.about {
+  height: 40rem;
+  border: var(--block);
+}
+
+.projects {
+  height: 80rem;
+  border: var(--block);
+}
+
+.contact {
+  height: 40rem;
+  border: var(--block);
+}
+
+footer {
+  height: 10rem;
+  background-color: var(--violet);
+}
