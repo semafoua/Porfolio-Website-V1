@@ -16,6 +16,9 @@
 nav {
   height: 4rem;
   border: var(--block);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .intro {
