@@ -3,6 +3,7 @@
   --violet: #5c0aff;
   --white: #f8f8ff;
   --blue: #46b1c9;
+  --grey: #eee;
   background-color: var(--white);
   --main-font: "Poppins";
   --second-font: "DM Sans";
@@ -13,21 +14,20 @@
   margin: 0;
   padding: 0;
 }
-
+/* Nav Bar Stuff*/
 nav {
   display: flex;
   align-items: center;
   height: 3.5rem;
   background-color: var(--white);
-  border: var(--block);
   position: fixed;
   top: 0;
   width: 100%;
   font-family: var(--main-font);
+  box-shadow: 0rem 0.4rem 0.5rem #ddd;
 }
 
 .nav-items {
-  /* border: var(--block); */
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -43,36 +43,43 @@ nav {
 #nav-links {
   display: flex;
   /* border: var(--block); */
-  width: 30%;
   list-style-type: none;
   align-items: center;
   justify-content: space-between;
   font-size: 1.15rem;
 }
 
+#nav-links li {
+  padding-left: 2rem;
+}
+
 body {
   /* Grids!!! */
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, #eee 0.1rem, transparent 1px),
-    linear-gradient(to bottom, #eee 0.1rem, transparent 1px);
+  background-image: linear-gradient(
+      to right,
+      var(--grey) 0.1rem,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--grey) 0.1rem, transparent 1px);
 }
 
-.intro {
+#intro {
   height: 50rem;
   border: var(--block);
 }
 
-.about {
+#about {
   height: 40rem;
   border: var(--block);
 }
 
-.projects {
+#projects {
   height: 80rem;
   border: var(--block);
 }
 
-.contact {
+#contact {
   height: 40rem;
   border: var(--block);
 }
