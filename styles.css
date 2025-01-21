@@ -64,6 +64,10 @@ body {
     linear-gradient(to bottom, var(--grey) 0.1rem, transparent 1px);
 }
 
+main {
+  padding-top: 3.5rem;
+}
+
 #intro {
   height: 50rem;
   border: var(--block);
