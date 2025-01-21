@@ -13,6 +13,16 @@
 * {
   margin: 0;
   padding: 0;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--blue);
 }
 /* Nav Bar Stuff*/
 nav {
@@ -35,17 +45,23 @@ nav {
   padding-inline: 3rem;
 }
 
+/* The Sarika Mafoua Namy Heading */
 .nav-items h3 {
   white-space: nowrap;
-  border: var(--block);
+  /* border: var(--block); */
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  transition: 0.3s;
+}
+
+.nav-items h3:hover {
+  color: var(--violet);
 }
 
 #nav-links {
   display: flex;
-  border: var(--block);
+  /* border: var(--block); */
   list-style-type: none;
   align-items: center;
   justify-content: space-between;
