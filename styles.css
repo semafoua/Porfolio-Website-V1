@@ -22,6 +22,7 @@ nav {
   background-color: var(--white);
   position: fixed;
   top: 0;
+  max-width: 100%;
   width: 100%;
   font-family: var(--main-font);
   box-shadow: 0rem 0.4rem 0.5rem #ddd;
@@ -35,6 +36,8 @@ nav {
 }
 
 .nav-items h3 {
+  white-space: nowrap;
+  border: var(--block);
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -42,15 +45,14 @@ nav {
 
 #nav-links {
   display: flex;
-  /* border: var(--block); */
+  border: var(--block);
   list-style-type: none;
   align-items: center;
   justify-content: space-between;
   font-size: 1.15rem;
-}
-
-#nav-links li {
-  padding-left: 3rem;
+  max-width: 30rem;
+  width: 100%;
+  margin-left: 1rem;
 }
 
 /* Background-main stuff */
